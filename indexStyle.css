@@ -1,0 +1,8 @@
+body {background-color: black; color:aquamarine; }
+h1 {color:aqua; font-size: 25px;}
+h2 {font-size: 18px;}
+p {height:15px;}
+
+
+/* example class setting css */
+div.header {text-align: center;}
