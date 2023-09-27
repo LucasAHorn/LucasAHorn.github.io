@@ -1,8 +1,9 @@
-body {background-color: black; color:aquamarine; }
-h1 {color:aqua; font-size: 25px;}
-h2 {font-size: 18px;}
+body {background-color: black; color:aquamarine; font-family: sans-serif;}
+h1 {color:aqua; font-size: 35px;}
+h2 {font-size: 20px;}
 p {height:15px;}
-
-
 /* example class setting css */
-div.header {text-align: center;}
+.header {text-align: center;}
+
+/* delete below this later */
+div {text-align: center;}

@@ -1,16 +1,14 @@
 // Using Date objects in js
-let start = Date.now();
-console.log(Date.now());
-  
-// random fn
-function greeting(){
-    console.log("Hey nerdlets (small nerds)\nThis is a new line");
+const startOfProject = 1695775081033; //for the nostalgia
+console.log(Date.now() - startOfProject + " seconds ago I created this project");
+let x = 0;
+const a = document.getElementById("secs");
+
+function TimePassed(){
+    setInterval(function(){
+        a.innerHTML = "You have been on this website for " + x + " seconds";
+        x+=1;
+        }, 1000);
+    return;
 }
-greeting();
-
-
-//tells time in seconds
-let end = Date.now();
-let elapsed = end - start;   
-console.log(elapsed);
-console.log(Date.now());
+TimePassed();
