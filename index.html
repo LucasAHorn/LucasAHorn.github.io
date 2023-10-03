@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <HTML>
     <head>
-        <meta charset="UTF-8" name="viewport" cotent="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" name="viewport" cotent="width=device-width, initial-scale=1.0"> <!-- I do not know if this does anything -->
+        <title>Lucas Horn lives here</title>
     </head>
     <body>
         <div class = "header">
@@ -10,17 +11,31 @@
             <p margin = 50px>General Bio here<br><br></p>
         </div>
         <!-- I want to make the following one line, and to tell how many seconds you have been on the website -->
-        <div id = "secs"> 
-            <p>You have been on this website for 0 seconds</p>
-        </div>
         
+        <div class="centered"> 
+            <p id = "secs">You have been on this website for 0 seconds</p>
+        </div>
+
+        <div class="centered"> <!-- Buttons below, currently only  -->
+            <button  id = "resetTimerButton" onclick="resetTimer(resetTimerButton)" onmouseover="mouseOn(resetTimerButton)" 
+            onmouseout="mouseOff(resetTimerButton)">
+                <p>Reset timer</p>
+            </button>
+
+            <!-- resume button below -->
+            <a href="LucasHornResume.pdf" target="blank" download="LucasHornResume">
+                <button id = "downloadButton" onclick="resetTimer(downloadButton)" onmouseover="mouseOn(downloadButton)" 
+                onmouseout="mouseOff(downloadButton)">
+                    <p>
+                        View Resume
+                    </p>
+                </button>
+            </a>
+        </div>
         <!--
         Comments go in here
             add a background
-            add navigation
-            relearn css
-            relearn js
-            easy
+            add navigation (like a sidebar)
         --> 
         <link rel="stylesheet" href="indexStyle.css">
         <script src="indexScript.js">

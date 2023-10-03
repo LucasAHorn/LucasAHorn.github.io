@@ -1,9 +1,27 @@
-body {background-color: black; color:aquamarine; font-family: sans-serif;}
-h1 {color:aqua; font-size: 35px;}
+body {
+    background-color: black; 
+    color:aquamarine; 
+    font-family: sans-serif;
+}
+h1 {
+    color:aqua;
+    font-size: 35px;
+}
 h2 {font-size: 20px;}
 p {height:15px;}
+
+/* do not be an idiot and put the rgb values in "quotations" */
+button {
+    margin: 20px;
+    background-color: #3333AA;
+    color: #EEEEEE;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
 /* example class setting css */
 .header {text-align: center;}
 
 /* delete below this later */
-div {text-align: center;}
+.centered {text-align: center;}
