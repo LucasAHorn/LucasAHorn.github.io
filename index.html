@@ -2,30 +2,24 @@
 <HTML>
     <head>
         <meta charset="UTF-8" name="viewport" cotent="width=device-width, initial-scale=1.0"> <!-- I do not know if this does anything -->
-        <title>Lucas Horn lives here</title>
+        <title>Lucas Horn personal website</title>
+        <link rel="website icon" type="ico" 
+        href="images/logo.webp"> <!-- Change this before push to git -->
     </head>
     <body>
         <div class = "header">
             <h1>Lucas Horn</h1>
             <h2>Software Engineer | Freshman</h2>
             <p margin = 50px>General Bio here<br><br></p>
-        </div>
+
+
         <!-- I want to make the following one line, and to tell how many seconds you have been on the website -->
         
-        <div class="centered"> 
-            <p id = "secs">You have been on this website for 0 seconds</p>
+            <p id="secs">You have been on this website for 0 seconds</p>
         </div>
-
-        <div class="centered"> <!-- Buttons below, currently only  -->
-            <button  id = "resetTimerButton" onclick="resetTimer(resetTimerButton)" onmouseover="mouseOn(resetTimerButton)" 
-            onmouseout="mouseOff(resetTimerButton)">
-                <p>Reset timer</p>
-            </button>
-
-            <!-- resume button below -->
-            <a href="LucasHornResume.pdf" target="blank" download="LucasHornResume">
-                <button id = "downloadButton" onclick="resetTimer(downloadButton)" onmouseover="mouseOn(downloadButton)" 
-                onmouseout="mouseOff(downloadButton)">
+        <div>
+            <a href="LucasHornResume.pdf" target="blank">
+                <button id="viewButton" class="download">
                     <p>
                         View Resume
                     </p>
@@ -39,7 +33,6 @@
         --> 
         <link rel="stylesheet" href="indexStyle.css">
         <script src="indexScript.js">
-            //hopefully nothing goes here
         </script>
     </body>
 </html>

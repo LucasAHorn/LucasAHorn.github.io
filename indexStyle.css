@@ -1,27 +1,42 @@
-body {
-    background-color: black; 
-    color:aquamarine; 
+/* colors from: https://www.color-hex.com/color-palette/2280 */
+:root {
+    --main-color0: #343d46; /* almost black - Text color */
+    --main-color1: #4f5b66; /* medium gray  - ____ */
+    --main-color2: #65737e; /* medium blue  - button color */
+    --main-color3: #a7adba; /* light gray   - button hover */
+    --main-color4: #c0c5ce; /* almost white - Background color */
+}
+
+html {
+    background-color: var(--main-color4); 
+    color: var(--main-color0); 
     font-family: sans-serif;
+    text-align: center;
 }
 h1 {
-    color:aqua;
     font-size: 35px;
 }
 h2 {font-size: 20px;}
 p {height:15px;}
 
 /* do not be an idiot and put the rgb values in "quotations" */
+/* remove all color aspects and put those in classes */
 button {
-    margin: 20px;
-    background-color: #3333AA;
-    color: #EEEEEE;
+    /* margin: 20px;  */
+    background-color: var(--main-color1);
+    border: 2px solid var(--main-color1);    
+    color: var(--main-color4);
     border-radius: 10px;
-    border: none;
+    margin: 20px;
+    padding: 12px 25px;
+    transition-duration: 0.5s;
     cursor: pointer;
+}
+
+button:hover{
+    background-color: #a4bcc4;
+    color: #FFF;
 }
 
 /* example class setting css */
 .header {text-align: center;}
-
-/* delete below this later */
-.centered {text-align: center;}

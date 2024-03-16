@@ -18,6 +18,7 @@ plan on making the website to be top to bottom:
      - year(freshman) | major(software Eng)
  - resume
  - games (still need to develop)
+ - - possibly a email application where you can take notes on the email or on sticky notes on the email
  
 CURRENT ISSUES WITH WEBSITE:
  - none that I am aware of
@@ -26,3 +27,4 @@ Features to add
  - games (in java, c, or js)
  - nav bar
  - better color scheme and ideas
+ - change mouseOver and mouseOff Fn's to css, look at insta for the ideas
