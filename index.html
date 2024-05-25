@@ -1,77 +1,57 @@
-<!-- https://mgraham33.github.io/ - used for some reference -->
-
 <!DOCTYPE html>
-<HTML>
-    <head>
-        <meta charset="UTF-8" name="viewport" cotent="width=device-width, initial-scale=1.0">
-        <title>Lucas Horn - Portfolio</title>
-        <link rel="website icon" type="ico" 
-        href="images/logo.webp">
-        <link rel="stylesheet" href="indexStyle.css">
-    </head>
-    <body>
-        
-        <div class="header"> <!-- This should have multiple boxes horizontally on a nav bar -->
-            <div class="name">
-                <h2>Lucas Horn</h2>
-            </div>
-
-                <!-- These should be on the nav bar -->
-            <div class="sections">
-                <div>
-                    <h2>Home</h2>
-                </div>
-                <div>
-                    <h2>About Me</h2>
-                </div>
-                <div>
-                    <h2>Experience</h2>
-                </div>
-                <div>
-                    <h2>Projects</h2>
-                </div>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Horn - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.webp">
+    <link rel="stylesheet" href="indexStyle.css">
+</head>
+<body>
+    <header class="header">
+        <div class="name">
+            <h2>Lucas Horn</h2>
         </div>
+        <nav class="navbar">
+            <a href="#Home"><h2>Home</h2></a>
+            <a href="#AboutMe"><h2>About Me</h2></a>
+            <a href="#Experience"><h2>Experience</h2></a>
+            <a href="#Portfolio"><h2>Projects</h2></a>
+        </nav>
+    </header>
 
-        <!-- This contans two bullet points about me and a background that includes a photo of me -->
-        <div id="Home" class="module">
-            <h3>Software Engineer, Something else here, another thing</h3>
-            <h3>Maybe something else here</h3>
+    <section id="Home" class="module">
+        <h3>Software Engineer, Something else here, another thing</h3>
+        <h3>Maybe something else here</h3>
+    </section>
+
+    <section id="AboutMe" class="module about-me">
+        <h1>About Me</h1>
+        <p>
+            State my major and my interests in here. Any experience should also be mentioned.
+            <br><br>
+            Then I should state my coding languages that I have used.
+        </p>
+        <div class="resume-button">
+            <a href="LucasHornResume.pdf" target="_blank">
+                <button id="viewButton" class="download">
+                    View Resume
+                </button>
+            </a>
         </div>
+    </section>
 
-        <!-- The text should be left centered with a photo on the right side -->
-        <div id="AboutMe" class="module">
-            <h1>About Me</h1>
-            <p>
-                State my major and my interests in here. Any experience should also be mentioned
-                <br><br>
-                Then I should state my coding languages that I have used
-            </p>
-            <!-- The resume should be avalible below my gerneral description -->
-            <div>
-                <a href="LucasHornResume.pdf" target="blank">
-                    <button id="viewButton" class="download">
-                        <p>View Resume</p>
-                    </button>
-                </a>
-            </div>
-        </div>
+    <section id="Experience" class="module">
+        <h1>Experience</h1>
+        <p>This is where I should put a bunch of "flashcards" describing my development experience.</p>
+        <p>Flashcards will have a title and then a description.</p>
+    </section>
 
-        <!-- This should contain little "flashcards" of what I have done and where, not necessairy yet -->
-        <div id="Experience" class="module">
-            <h1>Experience</h1>
-            <p>This is where I should put a bunch of "flashcards" describing my development experience</p>
-            <p>Flashcard will have a title then a description</p>
-        </div>
+    <section id="Portfolio" class="module">
+        <h1>Portfolio</h1>
+        <p>This will contain multiple cards that link to the GitHub page of the project.</p>
+        <p>They should contain a title and an image.</p>
+    </section>
 
-        <!-- This should contain all of the coding projects that I have participated in
-        THey can all just be github links -->
-        <div id="Portfolio" class="module">
-            <h1>Portfolio</h1>
-            <p>This will contain multiple cards that link to the github page of the project</p>
-            <p>They should contain a title and an image</p>
-        </div>
-
-    </body>
     <script src="indexScript.js"></script>
+</body>
 </html>
