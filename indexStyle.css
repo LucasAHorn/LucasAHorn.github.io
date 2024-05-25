@@ -1,15 +1,17 @@
 /* colors from: https://www.color-hex.com/color-palette/2280 */
 :root {
-    --main-color0: #343d46; /* almost black - Text color */
-    --main-color1: #4f5b66; /* medium gray  - ____ */
-    --main-color2: #65737e; /* medium blue  - button color */
-    --main-color3: #a7adba; /* light gray   - button hover */
-    --main-color4: #c0c5ce; /* almost white - Background color */
+    --main-color0: #000;   /* Completley black */
+    --main-color1: #343d46; /* almost black - Text color */
+    --main-color2: #4f5b66; /* medium gray  - ____ */
+    --main-color3: #65737e; /* medium blue  - button color */
+    --main-color4: #a7adba; /* light gray   - button hover */
+    --main-color5: #c0c5ce; /* almost white - Background color */
+    --main-color6: #ffffff; /* pure white   - ____ */
 }
 
 html {
-    background-color: var(--main-color4); 
-    color: var(--main-color0); 
+    background-color: var(--main-color5); 
+    color: var(--main-color1); 
     font-family: sans-serif;
     text-align: center;
 }
@@ -19,13 +21,12 @@ h1 {
 h2 {font-size: 20px;}
 p {height:15px;}
 
-/* do not be an idiot and put the rgb values in "quotations" */
-/* remove all color aspects and put those in classes */
+/* Need to reformat the button here or in the div */
 button {
     /* margin: 20px;  */
-    background-color: var(--main-color1);
-    border: 2px solid var(--main-color1);    
-    color: var(--main-color4);
+    background-color: var(--main-color2);
+    border: 2px solid var(--main-color2);    
+    color: var(--main-color5);
     border-radius: 10px;
     margin: 20px;
     padding: 12px 25px;
@@ -34,9 +35,21 @@ button {
 }
 
 button:hover{
-    background-color: #a4bcc4;
-    color: #FFF;
+    background-color: var(--main-color3);
+    color: var(--main-color6);
 }
 
 /* example class setting css */
-.header {text-align: center;}
+.header {
+    text-align: center;
+}
+
+/* This has the remaining nav items */
+div.modules {
+
+}
+
+/* This only contains one nav item */
+div.module {
+
+}
