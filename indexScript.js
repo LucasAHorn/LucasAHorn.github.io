@@ -1,1 +1,0 @@
-console.log(parseInt((Date.now() - 1695775081033) / 1000 / 3600 / 24) + " days ago I created this webpage");
