@@ -1,59 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Horn - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.webp">
-    <link rel="stylesheet" href="indexStyle.css">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Lucas Horn - Portfolio</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="L-logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+	
 </head>
-<body>
-    <header class="header">
-        <div class="name">
-            <h2>Lucas Horn</h2>
+<body id="page-top" class="politics_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div id="main-ld">
+			<div id="loader"></div>  
+		</div>
+    </div>
+    <!-- END LOADER -->
+	
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<img class="img-fluid" src="images/logo.png" alt="" />	<!-- this needs to have the image changed to my name -->
+		</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
         </div>
-        <nav class="navbar">
-            <a href="#Home"><h2>Home</h2></a>
-            <a href="#AboutMe"><h2>About Me</h2></a>
-            <a href="#Experience"><h2>Experience</h2></a>
-            <a href="#Portfolio"><h2>Projects</h2></a>
-        </nav>
-    </header>
+      </div>
+    </nav>
+	
+	<section id="home" class="main-banner parallaxie" style="background: url('uploads/background.webp')">
+		<div class="heading">
+			<h1>Lucas Horn</h1>
+			<p>Iowa State University Class of 2027<br>Pursuing a bachelors of Software Engineering</p>
+			<h3 class="cd-headline clip is-full-width">
+				<span>Experience: </span>
+				<span class="cd-words-wrapper">
+					<b class="is-visible">Programming</b> <!-- This contains all of the changing text -->
+					<b>Personal Projects</b>
+					<b>Hackathons</b>
+					<b>Club Involvement</b>
+					<b>Unicorn wrangler</b>
+					<b>That was a lie</b>
+					<!-- <b>Tutoring</b> -->
+				</span>
+			</h3>
+		</div>
+	</section>
 
-    <section id="Home" class="module">
-        <h3>Software Engineer, Something else here, another thing</h3>
-        <h3>Maybe something else here</h3>
-    </section>
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">                        
+                        <h2>About Me</h2>
+                        <p>
+							I am currently a sophmore studying at Iowa State University, persuing a bachelors of Software Engineering.
+							 Programming caught my attention at a young age, thanks to my father helping me start.
+							 Since then I have taken classes in Python and Java in high school, which amplified love for programming.
+							 At Iowa State University I have excelled in my courses and meet amazing people every day.
+							 I am ready to - something about how I am excited to continue learning and will take on any challenge given to me
+						</p>
+						<p> 
+							Resourceful abilities that I have developed over my years of education and personal development include experience with Java, C, Python, React, HTML, CSS, and JavaScript.
+							 While utilizing Visual Studio Code, Eclipse, Cygwin, Intellij, and Replit in various projects.
+						</p>
+						<a target=”_blank” href="resume.pdf" class="sim-btn btn-hover-new" data-text="View Resume"><span>View Resume</span></a>
+                    </div>
+                </div>
 
-    <section id="AboutMe" class="module about-me">
-        <h1>About Me</h1>
-        <p>
-            State my major and my interests in here. Any experience should also be mentioned.
-            <br><br>
-            Then I should state my coding languages that I have used.
-        </p>
-        <div class="resume-button">
-            <a href="LucasHornResume.pdf" target="_blank">
-                <button id="viewButton" class="download">
-                    View Resume
-                </button>
-            </a>
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn">
+                        <img src="uploads/aboutMe.jpeg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div>
+            </div>
         </div>
-    </section>
+    </div><!-- end section -->
 
-    <section id="Experience" class="module">
-        <h1>Experience</h1>
-        <p>This is where I should put a bunch of "flashcards" describing my development experience.</p>
-        <p>Flashcards will have a title and then a description.</p>
-    </section>
 
-    <section id="Portfolio" class="module">
-        <h1>Portfolio</h1>
-        <p>This will contain multiple cards that link to the GitHub page of the project.</p>
-        <p>They should contain a title and an image.</p>
-    </section>
+  	<div id="experience" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Experience</h3>
+                <p>Relevant experience in the student organizations and the workplace</p>
+            </div>
 
-    <script>
-        console.log(parseInt((Date.now() - 1695775081033) / 1000 / 3600 / 24) + " days ago I created this webpage");
-    </script>
+            <div class="row">
+				
+				<div class="col-md-4">
+					<div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-idea-1"></i>
+						</div>
+						<h2>CSE Club</h2>
+						<p>
+							 I am a project lead at Iowa State's Computer Science and Software Engineering Club.
+							 Currently, I am assembling a team of developers to create an application that will trasnfer a playlist from YouTube Music to Spotify.
+							 My responsibilities will be to managing the project github repository, coodinating with other students.
+						</p>
+						<br>
+					</div>
+                </div>
+				
+				<div class="col-md-4">
+					<div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-idea"></i>
+						</div>
+						<h2>Google Developer Student Club</h2>
+						<p>This club focuses on developing soft and technical skills of members.
+							 I am the treasurer and focus on managing funds and raising money, through any opportunities avalible.
+							 Next line here -----
+						</p>
+						<br><br><br>
+					</div>
+				</div>	
+				
+				<div class="col-md-4">
+					<div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-idea"></i>
+						</div>
+						<h2>
+							Hackathons
+						</h2>
+						<p>
+							I have participated in the BuildDSM V1 by KreativeHorizon.
+							 I created a React application that would return useful information about pet perscriptions, utilizing the FDA Green Book. 
+							 The depth of the project earned best technical build.
+						</p>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-process"></i>
+						</div>
+						<h2>
+							Class Projects
+						</h2>
+						<p>
+							There are many projects that I am not publishing due to them being completed as part of coursework.
+							 There are some of my univerity projects, however, that are not on standard rubrics, and thus can be seen in my portfolio below.
+						</p>
+					</div>
+                </div>
+
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-seo"></i>
+						</div>
+						<h2>Personal Projects</h2>
+						<p>
+							I am creating a game from scratch using java swing, leveraging object oriented programming.
+							 The game revolves around expanding a moon base and managing resources.
+							 I will be completing this with the help of a friend in the summer of 2025.
+						</p>
+					</div>
+                </div>
+				
+				<!--
+				<div class="col-md-4">
+					<div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-development"></i>
+						</div>
+						<h2>name here</h2>
+						<p>description here</p>
+					</div>
+				</div>
+				-->
+
+				<!--
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-discuss-issue"></i>
+						</div>
+						<h2>Name</h2>
+						<p>discription</p>
+					</div>
+                </div>
+				-->
+            </div>
+        </div>
+    </div>
+
+	<!-- portfolio section -->
+	<div id="portfolio" class="section lb">
+		<div class="container">
+			<div class="section-title text-left">
+                <h3>Portfolio</h3>
+                <p>GitHub links to hackathon, personal, and organization projects</p>
+            </div><!-- end title -->
+			
+
+			<div class="gallery-menu row">
+				<div class="col-md-12">
+					<div class="button-group filter-button-group text-left">
+						<button class="active" data-filter="*">All</button>
+						<button data-filter=".gal_a">Hackathon Projects</button>
+						<button data-filter=".gal_b">Personal Projects</button>
+						<button data-filter=".gal_c">Student Organization Projects</button>
+					</div>
+				</div>
+			</div>
+			
+			<!-- This contains all of the cards for code projects -->
+			<div class="gallery-list row">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
+					<div class="gallery-single fix">
+						<img src="uploads/Farm-fix-chicken.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a target=”_blank” href="https://github.com/nwfrank/builddsm" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4 col-sm-6 gallery-grid gal_b">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-03.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a target=”_blank” href="https://github.com/LucasAHorn/Summer24Game" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+
+			 	<div class="col-md-4 col-sm-6 gallery-grid gal_c">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-01.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a target=”_blank” href="https://github.com/LucasAHorn/Playlist-Platform-Transfer-Project" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="col-md-4 col-sm-6 gallery-grid gal_c">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a target=”_blank” href="https://github.com/CSE-Club-ISU" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i><i></a>
+						</div>
+					</div>
+				</div> -->
+
+				
+				<!-- <div class="col-md-4 col-sm-6 gallery-grid gal_c">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-04.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a target=”_blank” href="https://github.com/CSE-Club-ISU/Playlist-Platform-Transfer-Project" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i><i></a>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+
+			<!--
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-02.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a target=”_blank” href="https://github.com/mgraham33/FlickPick" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-04.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a target=”_blank” href="https://github.com/mgraham33/TheGameOfLife" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a target=”_blank” href="https://github.com/CSE-Club-ISU" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+                        </div>
+					</div>
+				</div>
+			-->
+			</div>
+		</div>
+	</div>
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About Me</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#portfolio">Portfolio</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+	<!-- Camera Slider -->
+	<!-- <script src="js/jquery.mobile.customized.min.js"></script> This is not working currently -->
+	<script src="js/jquery.easing.1.3.js"></script> 
+	<script src="js/parallaxie.js"></script>
+	<script src="js/headline.js"></script>
+	<!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.vide.js"></script>
+
 </body>
 </html>
