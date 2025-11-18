@@ -14,8 +14,7 @@ function App() {
       <Header />
       <Landing />
       <AboutMe />
-      <Projects />
-      
+      <Projects />    
     </>
   )
 }
