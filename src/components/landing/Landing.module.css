@@ -1,5 +1,5 @@
 div.LandingContent {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.45)), url("../assets/background.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.45)), url("../../public/uploads/background.webp");
     height: 100vh;
     
     background-size: cover;

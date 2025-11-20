@@ -1,4 +1,4 @@
-import "../styles/Landing.css";
+import "./Landing.module.css";
 // Make the same landing area as lucasahorn.github.io
     // (This has a background image with changing text)
         // To change the text break the string into a char array or use the horizontal slide feature for block elements

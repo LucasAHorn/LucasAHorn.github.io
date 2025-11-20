@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 
-import Header from './components/Header'
-import Landing from './components/Landing'
-import AboutMe from './components/AboutMe'
-import Projects from './components/Projects'
+import Header from './components/header/Header'
+import Landing from './components/landing/Landing'
+import AboutMe from './components/aboutMe/AboutMe'
+import Projects from './components/projects/Projects'
 
 function App() {
   const [count, setCount] = useState(0)

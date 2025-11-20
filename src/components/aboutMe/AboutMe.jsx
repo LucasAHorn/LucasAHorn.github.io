@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; // Importing brand icons
-import '../styles/AboutMe.css';
+import './AboutMe.css';
 
 function AboutMe() {
   return (
