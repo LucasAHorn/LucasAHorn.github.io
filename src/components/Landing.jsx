@@ -1,5 +1,4 @@
 import "../styles/Landing.css";
-
 // Make the same landing area as lucasahorn.github.io
     // (This has a background image with changing text)
         // To change the text break the string into a char array or use the horizontal slide feature for block elements
@@ -17,10 +16,10 @@ function Landing() {
 
 
             <div className="HorizontallyAligned">
-                <p className="ChangingText">Hackathons</p>
                 <p className="ChangingText">Club Involvement</p>
+                <p className="ChangingText">Google Developer Group Vice President</p>
+                <p className="ChangingText">Hackathons</p>
                 <p className="ChangingText">Personal Projects</p>
-                <p className="ChangingText">GDSC Vice President and Treasurer</p>
                 <p className="ChangingText">Unicorn wrangler</p>
                 <p className="ChangingText">That was a lie</p>
             </div>
