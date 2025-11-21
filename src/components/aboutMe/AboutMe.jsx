@@ -18,7 +18,7 @@ function AboutMe() {
         </a>
       </div>
       <div className="about-me-right">
-        <img src="src\assets\aboutMe.jpeg" alt="Lucas Horn" className="profile-image" />
+        <img src="../../../public/lucas_images/aboutMe.jpeg" alt="Lucas Horn" className="profile-image" />
         <div className="social-links">
           <a href="https://www.linkedin.com/in/lucasahorn" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} />
